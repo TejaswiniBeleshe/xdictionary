@@ -23,8 +23,8 @@ function App() {
     <div className="App">
       <h1>Dictionary App</h1>
       <form onSubmit={handleSubmit}> 
-        <input value={ip} onChange={(e)=>setIp(e.target.value)} placeholder="Search for a word..."/>
-        <button type='submit'>Submit</button>
+        <input type="text" value={ip} onChange={(e)=>setIp(e.target.value)} placeholder="Search for a word..."/>
+        <button type="submit">Submit</button>
       </form>
       <h5>Definition:</h5>
       {res && res.meaning?<p>{res.meaning}</p>:""}
